@@ -96,7 +96,7 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME  }}" --password-stdin
 
       - name: Tag Docker image
-        run: docker tag 5gc-udr:0.0.1-dev nayanacdac/udm
+        run: docker tag 5gc-udr:0.0.1-dev nayanacdac/udr
 
       - name: Push Docker image to Docker Hub
         run: docker push nayanacdac/udr
